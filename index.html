@@ -19,3 +19,58 @@
             </div>
             <div class="books-grid" id="books-container"></div>
         </section>
+
+        <section id="book-details" class="hidden">
+            <button id="back-btn"><i class="fas fa-arrow-left"></i> Back to List</button>
+            <div class="book-detail-container">
+                <div class="book-cover-large">
+                    <img id="detail-cover" src="https://via.placeholder.com/300x450?text=No+Cover" alt="Book cover">
+                </div>
+                <div class="book-info">
+                    <h2 id="detail-title"></h2>
+                    <p class="book-author" id="detail-author"></p>
+                    <p class="book-genre" id="detail-genre"></p>
+                    <div class="likes-container">
+                        <button id="like-btn"><i class="fas fa-thumbs-up"></i> <span id="like-count">0</span></button>
+                    </div>
+                    <h3>Summary</h3>
+                    <p id="detail-summary"></p>
+                    <button id="delete-btn" class="delete-btn"><i class="fas fa-trash"></i> Delete Book</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="add-book-form" class="hidden">
+            <h2>Add New Book</h2>
+            <form id="book-form">
+                <div class="form-group">
+                    <label for="title">Title*</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="author">Author*</label>
+                    <input type="text" id="author" required>
+                </div>
+                <div class="form-group">
+                    <label for="genre">Genre*</label>
+                    <input type="text" id="genre" required>
+                </div>
+                <div class="form-group">
+                    <label for="summary">Summary*</label>
+                    <textarea id="summary" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="cover-url">Cover Image URL</label>
+                    <input type="url" id="cover-url">
+                </div>
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="button" id="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="./src/index.js"></script>
+</body>
+</html>
